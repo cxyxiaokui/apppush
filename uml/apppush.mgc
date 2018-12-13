@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="cn.zhuoqianmingyue.push.convert.IAppPushParamConverter"
+        x="632" y="279">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="cn.zhuoqianmingyue.push.common.AppPushManger" x="585" y="71">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="cn.zhuoqianmingyue.push.common.IAppPush"
+            endpointName="appPush" kind="Simple"/>
+        <Communication destinationClassName="cn.zhuoqianmingyue.push.common.IAppPush"/>
+    </Class>
+    <Class name="cn.zhuoqianmingyue.push.config.AppPushConfig" x="401" y="229">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="cn.zhuoqianmingyue.push.impl.JiGuangPushImpl" x="21" y="494">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="cn.zhuoqianmingyue.push.common.AbstractAppPush"/>
+        <Communication destinationClassName="cn.zhuoqianmingyue.push.convert.IAppPushParamConverter"/>
+        <Communication destinationClassName="cn.zhuoqianmingyue.push.config.AppPushConfig"/>
+    </Class>
+    <Class name="cn.zhuoqianmingyue.push.config.impl.JiGuangConfig"
+        x="392" y="357">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="cn.zhuoqianmingyue.push.config.AppPushConfig"/>
+    </Class>
+    <Class
+        name="cn.zhuoqianmingyue.push.convert.impl.JiGuangAppPushParamConverter"
+        x="630" y="410">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="cn.zhuoqianmingyue.push.convert.IAppPushParamConverter"/>
+    </Class>
+    <Class name="cn.zhuoqianmingyue.push.common.AbstractAppPush" x="18" y="227">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="cn.zhuoqianmingyue.push.common.IAppPush"/>
+        <Association
+            destinationClassName="cn.zhuoqianmingyue.push.config.AppPushConfig"
+            endpointName="appPushConfig" kind="Simple"/>
+        <Association
+            destinationClassName="cn.zhuoqianmingyue.push.convert.IAppPushParamConverter"
+            endpointName="appPushParamConverter" kind="Simple"/>
+    </Class>
+    <Class name="cn.zhuoqianmingyue.push.common.IAppPush" x="56" y="59">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+</ClassDiagram>
