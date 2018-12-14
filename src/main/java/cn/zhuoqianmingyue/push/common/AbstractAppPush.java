@@ -2,7 +2,6 @@ package cn.zhuoqianmingyue.push.common;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import com.arronlong.httpclientutil.exception.HttpProcessException;
 import cn.zhuoqianmingyue.push.config.AppPushConfig;
 import cn.zhuoqianmingyue.push.convert.IAppPushParamConverter;
 import cn.zhuoqianmingyue.push.impl.JiGuangPushImpl;
